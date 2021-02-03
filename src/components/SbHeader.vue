@@ -5,6 +5,7 @@
             <SbHeaderTitle  content="Home"/>
             <SbHeaderTitle class="m-header-sub-title" content="About"/>
             <SbHeaderTitle class="m-header-sub-title" content="Work"/>
+            <sb-button class="m-header-sub-title"/>
         </div>
         
     </div>
@@ -12,10 +13,12 @@
 
 <script>
 import SbHeaderTitle from './atoms/SbHeaderTitle.vue'
+import SbButton from './atoms/SbButton.vue'
 
     export default {
         components:{
-            SbHeaderTitle
+            SbHeaderTitle,
+            SbButton
         }
     }
 </script>
@@ -40,6 +43,7 @@ import SbHeaderTitle from './atoms/SbHeaderTitle.vue'
 }
 .header-sub-container{
     display: flex;
+    align-items: center;
 }
 .m-header-sub-title{
     margin-left: 20px

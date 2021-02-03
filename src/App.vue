@@ -1,21 +1,25 @@
 <template>
   <div id="app">
-    <sb-header-vue />
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sb-header />
+    <first-section />
+    <about-section/>
     
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import SbHeaderVue from './components/SbHeader.vue'
+import SbHeader from './components/SbHeader.vue'
+import FirstSection from './components/FirstSection.vue'
+import AboutSection from './components/AboutSection.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    SbHeaderVue
+    SbHeader,
+    FirstSection,
+    AboutSection
   }
 }
 </script>
