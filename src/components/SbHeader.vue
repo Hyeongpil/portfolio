@@ -29,6 +29,7 @@ import SbButton from './atoms/SbButton.vue'
     display: flex;
     background: #121212;
     justify-content: space-between;
+    padding: 12px;
 }
 
 .header-title{

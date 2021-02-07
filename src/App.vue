@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <sb-header />
-    <first-section />
+    <sb-header/>
+    <first-section/>
     <about-section/>
     
   </div>
@@ -19,7 +19,7 @@ export default {
   components: {
     SbHeader,
     FirstSection,
-    AboutSection
+    AboutSection,
   }
 }
 </script>

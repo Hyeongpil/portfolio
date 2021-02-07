@@ -6,8 +6,13 @@
         <span class="fs-third-text">Hello, I’m yoonhye. Product designer :)</span>
         </div>
         <div class="fs-img-container">
-            <img src="../assets/img/face.png"/>
-            <img src="../assets/img/oval.png"/>
+            <div class="fs-face-img">
+                <img src="../assets/img/face.png"/>
+                </div>
+            <div class="fs-oval-img">
+                <img src="../assets/img/oval.png"/>
+                </div>
+            
 
 
         </div>
@@ -26,7 +31,8 @@
 .fs-text-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    text-align: left;
+    float:left;
 }
 .fs-first-text{
     font-size:100px;
@@ -53,5 +59,19 @@
   letter-spacing: normal;
   color: #ffffff;
 }
-
+.fs-img-container{
+    
+}
+.fs-face-img{
+position: relative;
+top: 30px; 
+left: 70px;
+z-index: 1;
+}
+.fs-oval-img{
+position: relative;
+top: -400px;
+left: 400px;
+z-index: -1;    
+}
 </style>
