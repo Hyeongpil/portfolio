@@ -2,16 +2,20 @@
     <div>
         <div class="as-text-container">
             <span class="as-title-text">About</span>
-            <span class="as-first-text"><br>connect users<br> and services</span>
-            <div>
-            <span class="as-second-text">
-                <br>People and people<br>
-                <br>People and services<br>
-                <br>Furthermore, people and society,<br>
-                <br>We pursue a design that becomes a link<br>
-                <br> that brings the space closer together.<br>
-                </span>
-        </div>
+              <div class="as-content-container">
+                <div class="as-first-container">
+                  <div>connect users</div>
+                  <div>and services</div>
+                </div>
+                
+                <div class="as-second-container">
+                  <div>People and people</div>
+                  <div class="mt-10">People and services</div>
+                  <div class="mt-10">Furthermore, people and society,</div>
+                  <div class="mt-10">We pursue a design that becomes a link</div>
+                  <div class="mt-10">that brings the space closer together.</div>
+                </div>
+              </div>
             </div>
     </div>
 </template>
@@ -30,6 +34,12 @@
     justify-content: center;
 
 }
+.as-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
 .as-title-text{
   font-size: 36px;
   font-weight: bold;
@@ -40,7 +50,11 @@
   text-align: left;
   color: #ffffff;
 }
-.as-first-text{
+.as-first-container {
+  display: flex;
+  flex-direction: column;
+}
+.as-first-container div{
   font-size: 80px;
   font-weight: 800;
   font-stretch: normal;
@@ -50,7 +64,13 @@
   color: #ffffff;
 
 }
-.as-second-text{
+.as-second-container{
+    display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+.as-second-container div{
+
     float:right;
     font-size: 24px;
   font-weight: bold;
@@ -61,5 +81,6 @@
   text-align: left;
   color: #ffffff;
 }
+
 
 </style>

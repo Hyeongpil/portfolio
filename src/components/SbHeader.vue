@@ -1,5 +1,5 @@
 <template>
-    <div class="header-container">
+    <div class="header-container container">
         <div class="header-title">Yoonhye Kim</div>
         <div class="header-sub-container">
             <SbHeaderTitle  content="Home"/>

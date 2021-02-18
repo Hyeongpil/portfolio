@@ -1,9 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" class="html-container">
     <sb-header/>
-    <first-section/>
-    <about-section/>
-    
+    <div class="container">
+      <first-section/>
+      <about-section/>
+    </div>
   </div>
 </template>
 
@@ -11,7 +12,6 @@
 import SbHeader from './components/SbHeader.vue'
 import FirstSection from './components/FirstSection.vue'
 import AboutSection from './components/AboutSection.vue'
-
 
 
 export default {
@@ -34,6 +34,10 @@ export default {
   margin-top: 60px;
 }
 
+.html-container{
+  margin-bottom: 150px;
+}
+
 html { 
     background: #121212;
     background-repeat:no-repeat;
@@ -44,6 +48,5 @@ html {
     -o-background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    
 }
 </style>
