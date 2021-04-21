@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div v-for="(content, idx) in cardContent" :key="idx">
+    <div class="as-card-container" v-for="(content, idx) in cardContent" :key="idx">
       <sb-card class="as-card" :title="content.title" :desc="content.desc" />
     </div>
   </section>
@@ -110,5 +110,9 @@ export default {
 }
 .as-card {
   margin-bottom: 44px;
+}
+.as-card-container{
+  display:flex;
+  justify-content: center;
 }
 </style>

@@ -13,7 +13,6 @@
 import SbHeader from "./components/SbHeader.vue"
 import FirstSection from "./components/FirstSection.vue"
 import AboutSection from "./components/AboutSection.vue"
-import interaction from "./interaction"
 import FooterSection from "./components/FooterSection.vue"
 
 export default {
@@ -23,9 +22,6 @@ export default {
     FirstSection,
     AboutSection,
     FooterSection
-  },
-  created() {
-    interaction()
   }
 }
 </script>
