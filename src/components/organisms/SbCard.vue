@@ -1,8 +1,6 @@
 <template>
   <section class="card-container">
-    <div class="card-img">
-      <!-- <img> -->
-    </div>
+    <img class="card-img" :src="require(`@/assets/img/${imgName}`)" />
     <div class="card-text-container">
       <span class="card-text-title">{{ title }}</span>
       <span>{{ desc }}</span>
@@ -14,7 +12,8 @@
 export default {
   props: {
     title: String,
-    desc: String
+    desc: String,
+    imgName: String
   }
 }
 </script>

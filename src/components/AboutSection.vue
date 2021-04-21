@@ -20,7 +20,12 @@
     </div>
 
     <div class="as-card-container" v-for="(content, idx) in cardContent" :key="idx">
-      <sb-card class="as-card" :title="content.title" :desc="content.desc" />
+      <sb-card
+        class="as-card"
+        :title="content.title"
+        :desc="content.desc"
+        :imgName="content.imgName"
+      />
     </div>
   </section>
 </template>
@@ -34,15 +39,18 @@ export default {
       cardContent: [
         {
           title: "안녕하세요",
-          desc: "asdasdasd"
+          desc: "asdasdasd",
+          imgName: "surf.png"
         },
         {
           title: "2222",
-          desc: "333"
+          desc: "333",
+          imgName: "face.png"
         },
         {
           title: "444",
-          desc: "555"
+          desc: "555",
+          imgName: "oval.png"
         }
       ]
     }
@@ -111,8 +119,8 @@ export default {
 .as-card {
   margin-bottom: 44px;
 }
-.as-card-container{
-  display:flex;
+.as-card-container {
+  display: flex;
   justify-content: center;
 }
 </style>
