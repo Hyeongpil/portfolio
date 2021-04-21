@@ -1,5 +1,5 @@
 <template>
-  <div class="fs-section-container">
+  <section id="fs-section-container">
     <div class="fs-text-container">
       <span class="fs-first-text">Design</span>
       <span class="fs-second-text">Link</span>
@@ -24,7 +24,7 @@
         <sb-rotate-circle class="fs-rotate-circle" :size="60" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

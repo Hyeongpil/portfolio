@@ -5,6 +5,7 @@
       <first-section class="first-container" />
       <about-section />
     </div>
+    <footer-section />
   </div>
 </template>
 
@@ -12,13 +13,19 @@
 import SbHeader from "./components/SbHeader.vue"
 import FirstSection from "./components/FirstSection.vue"
 import AboutSection from "./components/AboutSection.vue"
+import interaction from "./interaction"
+import FooterSection from "./components/FooterSection.vue"
 
 export default {
   name: "App",
   components: {
     SbHeader,
     FirstSection,
-    AboutSection
+    AboutSection,
+    FooterSection
+  },
+  created() {
+    interaction()
   }
 }
 </script>
@@ -54,9 +61,5 @@ html {
 
 .first-container {
   height: 800px;
-}
-
-.html-container {
-  margin-bottom: 150px;
 }
 </style>

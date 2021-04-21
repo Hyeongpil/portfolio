@@ -1,34 +1,57 @@
 <template>
-  <div>
-    <div class="as-text-container">
-      <div class="as-title-container">
-        <span class="as-title-text">About</span>
+  <section id="as-section-container">
+    <div class="as-title-container">
+      <span class="as-title-text">About</span>
+    </div>
+
+    <div class="as-content-container">
+      <div class="as-first-container">
+        <div>connect users</div>
+        <div>and services</div>
       </div>
 
-      <div class="as-content-container">
-        <div class="as-first-container">
-          <div>connect users</div>
-          <div>and services</div>
-        </div>
-
-        <div class="as-second-container">
-          <div>People and people</div>
-          <div class="mt-10">People and services</div>
-          <div class="mt-10">Furthermore, people and society,</div>
-          <div class="mt-10">We pursue a design that becomes a link</div>
-          <div class="mt-10">that brings the space closer together.</div>
-        </div>
+      <div class="as-second-container">
+        <div>People and people</div>
+        <div class="mt-10">People and services</div>
+        <div class="mt-10">Furthermore, people and society,</div>
+        <div class="mt-10">We pursue a design that becomes a link</div>
+        <div class="mt-10">that brings the space closer together.</div>
       </div>
     </div>
-  </div>
+
+    <div v-for="(content, idx) in cardContent" :key="idx">
+      <sb-card class="as-card" :title="content.title" :desc="content.desc" />
+    </div>
+  </section>
 </template>
 
 <script>
-export default {}
+import SbCard from "./organisms/SbCard.vue"
+export default {
+  components: { SbCard },
+  data() {
+    return {
+      cardContent: [
+        {
+          title: "안녕하세요",
+          desc: "asdasdasd"
+        },
+        {
+          title: "2222",
+          desc: "333"
+        },
+        {
+          title: "444",
+          desc: "555"
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.as-text-container {
+#as-section-container {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -84,5 +107,8 @@ export default {}
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+}
+.as-card {
+  margin-bottom: 44px;
 }
 </style>
