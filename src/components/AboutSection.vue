@@ -38,19 +38,24 @@ export default {
     return {
       cardContent: [
         {
-          title: "안녕하세요",
-          desc: "asdasdasd",
-          imgName: "surf.png"
+          title: "Challenge",
+          desc: "댜양한 도전과 경험을 통해 성장하고자 합니다",
+          imgName: "surfing.png"
         },
         {
-          title: "2222",
-          desc: "333",
-          imgName: "face.png"
+          title: "Cooperative",
+          desc: "함께할 때 더 큰 시너지를 만들어 낼 수 있습니다",
+          imgName: "handshake.png"
         },
         {
-          title: "444",
-          desc: "555",
-          imgName: "oval.png"
+          title: "User centered",
+          desc: "사용자의 말에 귀기울이며, 사용자 중심의사고를 지향합니다.",
+          imgName: "group.png"
+        },
+          {
+          title: "Interactive",
+          desc: "일방향이 아닌 상호작용을 통한 문제해결을 합니다. ",
+          imgName: "eye.png"
         }
       ]
     }

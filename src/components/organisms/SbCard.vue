@@ -21,8 +21,8 @@ export default {
 <style lang="scss" scoped>
 .card-container {
   background-color: #1a1c1d;
-  width: 863px;
-  height: 163px;
+  width: 600px;
+  height: 120px;
   padding: 24px;
   display: flex;
   align-items: center;
@@ -30,8 +30,8 @@ export default {
   border-radius: 20px;
 }
 .card-img {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border-radius: 8px;
   background-color: #4f5359;
 }
@@ -47,7 +47,7 @@ export default {
   margin-bottom: 25px;
 }
 .card-text-desc {
-  font-size: 24px;
+  font-size: 24px; 
   font-weight: bold;
   color: #4f5359;
   line-height: 1.6;
